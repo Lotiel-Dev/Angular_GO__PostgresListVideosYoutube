@@ -31,5 +31,6 @@ desde la carpeta backend
 ```bash
 go get github.com/lib/pq
 ```
+esto descarga la libreria y la deja lista para usar
 
 
