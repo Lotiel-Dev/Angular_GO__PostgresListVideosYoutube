@@ -20,7 +20,7 @@ type Video struct {
 func main() {
 	// Cadena de conexión a la base de datos
 	// Cambia TU_CONTRASEÑA por tu contraseña real
-	connStr := "user=postgres password=TU_CONTRASEÑA dbname=youtube_links sslmode=disable"
+	connStr := "user=postgres password=12345 dbname=youtube_links sslmode=disable"
 
 	// Abre la conexión con la base de datos usando el driver "postgres"
 	db, err := sql.Open("postgres", connStr)

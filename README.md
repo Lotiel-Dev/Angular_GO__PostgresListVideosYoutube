@@ -68,3 +68,13 @@ Abre tu navegador o usa Postman para ir a:
 ```bash
 http://localhost:8080/api/videos
 ```
+deberiamos ver:
+```bash
+[
+  {
+    "id": 1,
+    "title": "Video 1",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  }
+]
+```
