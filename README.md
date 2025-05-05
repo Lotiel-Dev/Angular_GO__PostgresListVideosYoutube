@@ -78,3 +78,13 @@ deberiamos ver:
   }
 ]
 ```
+
+# PASO 3: Consumir la API de Golang desde Angular
+## A. Crear un servicio Angular para llamar al backend
+desde la carepeta de frontend ejecutaremos el siguiente comando para generar el servicio:
+```bash
+ng generate service services/video
+```
+y creara dos archivos:
+- src/app/services/video.service.ts
+- src/app/services/video.service.spec.ts (para pruebas, lo usaremos más adelante)
