@@ -26,11 +26,37 @@ y los abrimos con:
 http://localhost:8080/api/videos
 ```
 # PASO 2: Conectar Golang con PostgreSQL
-Instalamos el controlador de PostgresSQL para Go
+## Instalamos el controlador de PostgresSQL para Go
 desde la carpeta backend
 ```bash
 go get github.com/lib/pq
 ```
 esto descarga la libreria y la deja lista para usar
 
-
+## Crear la base de datos y tabla en PostgreSQL
+Abre tu consola de PostgreSQL:
+```bash
+psql -U postgres
+```
+Crea una base de datos:
+```bash
+CREATE DATABASE youtube_links;
+```
+Entra en la base de datos:
+```bash
+\c youtube_links
+```
+Crea una tabla videos:
+```bash
+CREATE TABLE videos (
+  id SERIAL PRIMARY KEY,
+  title TEXT NOT NULL,
+  url TEXT NOT NULL
+);
+```
+Inserta un ejemplo:
+```bash
+INSERT INTO videos (title, url) VALUES
+('Video 1', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+```
+## Escribir código en Go para conectar y leer
