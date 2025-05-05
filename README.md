@@ -25,6 +25,11 @@ y los abrimos con:
 ```bash
 http://localhost:8080/api/videos
 ```
-
+# PASO 2: Conectar Golang con PostgreSQL
+Instalamos el controlador de PostgresSQL para Go
+desde la carpeta backend
+```bash
+go get github.com/lib/pq
+```
 
 
