@@ -13,6 +13,10 @@ esto iniciara un servidor local en
 http://localhost:4200
 ```
 ## GO
+Iniciamos el modulo de GO para permitirnos manejar dependencias
+```bash
+go mod init github.com/tuusuario/youtube-video-api
+```
 ejecutamos el backend con:
 ```bash
 go run main.go
