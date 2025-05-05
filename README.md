@@ -60,3 +60,11 @@ INSERT INTO videos (title, url) VALUES
 ('Video 1', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 ```
 ## Escribir código en Go para conectar y leer
+Corre el servidor:
+```bash
+go run main.go
+```
+Abre tu navegador o usa Postman para ir a:
+```bash
+http://localhost:8080/api/videos
+```
